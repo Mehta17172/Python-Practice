@@ -14,13 +14,13 @@ def showImage(img):
 # Basics in PIL/Pillow
 
 # functions to resize the image
-def resize_images( image_names, new_size = (200, 200)):
+def resize_images( image_names, new_size = (800, 500)):
     for image_name in image_names:
         img = Image.open(image_name) # opens an image and creates an object for it
         img = img.resize(new_size) # resizes the dimensions of the image
         img.save("resized_" + image_name) # create and saves the new image
 
-images = ["img1.png","img2.png","img3.png","csgo.png"]
+images = ["csgo.jpg","valorant.jpg","csgo.png"]
 resize_images(images)
 
 #  crop an image
